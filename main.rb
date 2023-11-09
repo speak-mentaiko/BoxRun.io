@@ -1,9 +1,25 @@
 require 'dxopal'
 include DXOpal
+
+Window.width = 600
+Window.height = 500
+
+files = [
+  "scenes/title.rb"
+]
+
 Window.load_resources do
-  Window.bgcolor = C_BLACK
+  files.each do |file|
+    require_remote file
+  end
+
+  scene = Title.new
 
   Window.loop do
-    Window.draw_font(0, 0, "Hello!", Font.default, color: C_WHITE)
+    scene.update
+    if scene.finish?
+      scene.reset
+      scene = scene.next_scene
+    end
   end
 end
