@@ -5,7 +5,9 @@ Window.width = 600
 Window.height = 500
 
 files = [
-  "scenes/title.rb"
+  "scenes/title.rb",
+  "scenes/running.rb",
+  "characters/enemy.rb",
 ]
 
 Window.load_resources do
@@ -13,7 +15,7 @@ Window.load_resources do
     require_remote file
   end
 
-  scene = Title.new
+  scene = Running.new
 
   Window.loop do
     scene.update

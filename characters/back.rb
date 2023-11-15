@@ -1,0 +1,3 @@
+class Back < Sprite
+
+end
