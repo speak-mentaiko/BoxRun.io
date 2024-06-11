@@ -15,7 +15,7 @@ Window.load_resources do
     require_remote file
   end
 
-  scene = Running.new
+  scene = Title.new
 
   Window.loop do
     scene.update
