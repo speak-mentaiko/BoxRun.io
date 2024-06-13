@@ -1,9 +1,10 @@
 class Enemy < Sprite
+    Image.register(:enemy,'../images/enemy.png')
     def initialize
-        Image.register(:enemy,'../images/enemy.pmg')
-        self.x = 700
-        self.y = 380
-        self.image = Image[:enemy]
+        x = 700
+        y = 380
+        image = Image[:enemy]
+        super(x,y,image)
         @speed
     end
 

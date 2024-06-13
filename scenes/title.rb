@@ -1,19 +1,19 @@
-class Title
+class Title < Scene_base
     def initialize
-        @GROUND_Y = 300
-        @flg = false
+        super
+        @player = Player_start.new
+        @start = false
     end
 
     def update
-        Window.draw_box_fill(0, @GROUND_Y, Window.width, Window.height, [255, 255, 255])
-        if Imput.key_down?(KEY_LEFT)
-            Window.draw_box_fill(0, 0, Window.width, @GROUND_Y, [255, 255, 255])
-            @flg = true
+        super
+        @player.update
+        @start = true if Input.key_push?(K_SPACE) || Input.key_push?(K_UP)
+        if @start
+            @player.jump
+            @player.update
+            @flg = true if @player.y == 370
         end
-    end
-
-    def finish?
-        @flg
     end
 
     def next_scene
