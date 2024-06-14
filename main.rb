@@ -1,8 +1,8 @@
 require 'dxopal'
 include DXOpal
 
-Window.width = 600
-Window.height = 500
+#Window.width = 600
+#Window.height = 500
 
 dir = [
   "./scenes/scene_base.rb",
