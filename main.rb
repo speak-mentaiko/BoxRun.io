@@ -14,8 +14,7 @@ dir = [
   "characters/player_base.rb",
   "characters/player_run.rb",
   "characters/player_start.rb",
-  "characters/player_stop.rb",
-  "scenes/test.rb",
+  "characters/player_stop.rb"
 ]
 
 dir.each do |file|
