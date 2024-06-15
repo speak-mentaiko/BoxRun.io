@@ -1,6 +1,6 @@
 class Player_run < Player_base
-	Image.register(:box_0, '../images/box_0.png')
-  	Image.register(:box_1, '../images/box_1.png')
+	Image.register(:box_0, 'images/box_0.png')
+  	Image.register(:box_1, 'images/box_1.png')
   	def initialize
     	super(Image[:box_0])
     	@distance = 0

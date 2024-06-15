@@ -1,5 +1,5 @@
 class Result < Scene_base
-    Image.register(:restart, '../images/restart.png')
+    Image.register(:restart, 'images/restart.png')
     def initialize(distance)
         super
         @player = Player_stop.new(distance)

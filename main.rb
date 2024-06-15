@@ -5,17 +5,17 @@ include DXOpal
 #Window.height = 500
 
 dir = [
-  "./scenes/scene_base.rb",
-  "./scenes/title.rb",
-  "./scenes/running.rb",
-  "./scenes/result.rb",
-  "./characters/back.rb",
-  "./characters/enemy.rb",
-  "./characters/player_base.rb",
-  "./characters/player_run.rb",
-  "./characters/player_start.rb",
-  "./characters/player_stop.rb",
-  "./scenes/test.rb",
+  "scenes/scene_base.rb",
+  "scenes/title.rb",
+  "scenes/running.rb",
+  "scenes/result.rb",
+  "characters/back.rb",
+  "characters/enemy.rb",
+  "characters/player_base.rb",
+  "characters/player_run.rb",
+  "characters/player_start.rb",
+  "characters/player_stop.rb",
+  "scenes/test.rb",
 ]
 
 dir.each do |file|

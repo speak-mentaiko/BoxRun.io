@@ -1,5 +1,5 @@
 class Scene_base
-    Image.register(:stage, '../images/stage.png')
+    Image.register(:stage, 'images/stage.png')
     def initialize
         @flg = false
         @next_scene

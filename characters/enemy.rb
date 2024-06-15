@@ -1,5 +1,5 @@
 class Enemy < Sprite
-    Image.register(:enemy,'../images/enemy.png')
+    Image.register(:enemy,'images/enemy.png')
     def initialize
         x = 700
         y = 380

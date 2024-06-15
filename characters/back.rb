@@ -1,6 +1,6 @@
 class Back < Sprite
     $distance_high = 0
-    Image.register(:back, '../images/back.png')
+    Image.register(:back, 'images/back.png')
     
     def initialize
         @interval_back = 0
